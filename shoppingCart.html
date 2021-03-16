@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/044143875f.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <!--navigation bar-->
+    <nav class="navbar navbar-light" style="background-color: #ffcb91;">
+        <!-- Navbar content -->
+        <div class="container-fluid">
+            <div class="navbar-light" id="navbarNav">
+
+                <ul class="navbar-nav">
+                    <li style="color: black;" class="nav-item">
+                        <a>CatMart <i class="fas fa-cat"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="cart" href="homePage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="cart" id="dropDown" href="cataloguePage.html">Cat-alogue</a>
+                        <div class="item1"> <a href="product1.html" class="catLink">Bengal</div>
+                        <div class="item2"><a href="product2.html" class="catLink">Maincoon</div>
+                        <div class="item3"><a href="product3.html" class="catLink">Persian</div>
+                        <div class="item4"><a href="product4.html" class="catLink">Ragdoll</div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="cart" href="shoppingCart.html">Cat Cart <i
+                                class="fas fa-shopping-cart"></i><span>0</span></a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <br><br>
+    <div class="products-container">
+        <div class="product-header">
+            <h5 class="product-title">PRODUCT</h5>
+            <h5 class="price">PRICE</h5>
+            <h5 class="total">TOTAL</h5>
+
+        </div>
+
+        <div class="products">
+
+        </div>
+    </div>
+
+    <div>
+        <button class="btn btn-outline-danger" type="button" onclick="removeItem()">Clear Cart</button>
+    </div>
+    <br>
+    <div>
+        <h4>Discount Coupons</h4>
+        <div class="input-group mb-4">
+            <input type="text" class="form-control" placeholder="Discount code" aria-label="discount" id="discountCode"
+                aria-describedby="button-addon2"/>
+            <div class="input-group-append">
+                <button class="btn btn-outline-success" onclick="calculateDiscount()" type="button"
+                    id="button-addon2">Calculate discount</button>
+            </div>
+        </div>
+    </div>
+    <div class="deliveryService">
+        <h4>Delivery Options</h4>
+        <br><br>
+        <div class="input-group-append">
+            <button class="btn btn-outline-success" onclick="calculateDelivery_0()" type="button" id="button-addon2">Add
+                Collection</button>
+        </div>
+        <br>
+
+        <div class="input-group-append">
+            <button class="btn btn-outline-success" onclick="calculateDelivery_1()" type="button" id="button-addon2">Add
+                2-day delivery R150</button>
+        </div>
+        <br>
+        <div class="input-group-append">
+            <button class="btn btn-outline-success" onclick="calculateDelivery_2()" type="button" id="button-addon2">Add
+                overnight delivery R250</button>
+        </div>
+
+        <br>
+
+    </div>
+    </div>
+    <br>
+   
+
+
+
+    <div>
+        <h4>Confirm Order</h4>
+
+        <button class="btn btn-outline-success" type="button" id="button-Confirm" onclick="generateRef()">Send my
+            kitty!</button>
+
+    </div>
+    <footer>
+        <a id=linkedIN href="https://www.linkedin.com/in/sulaiman-kajee-5ba460187/">LaimyDev <i
+                class="fab fa-linkedin"></i></a>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js" async defer></script>
+
+</body>
+
+</html>

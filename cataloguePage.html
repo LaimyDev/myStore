@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/044143875f.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <!--navigation bar-->
+    <nav class="navbar navbar-light" style="background-color: #ffcb91;">
+        <!-- Navbar content -->
+        <div class="container-fluid">
+            <div class="navbar-light" id="navbarNav">
+
+                <ul class="navbar-nav">
+                    <li class="nav-item" style="color: black;">
+                        <a>CatMart <i class="fas fa-cat"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="cart" href="homePage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="cart" id="dropDown" href="cataloguePage.html">Cat-alogue</a>
+                        <div class="item1"> <a href="product1.html" class="catLink">Bengal</div>
+                        <div class="item2"><a href="product2.html" class="catLink">Maincoon</div>
+                        <div class="item3"><a href="product3.html" class="catLink">Persian</div>
+                        <div class="item4"><a href="product4.html" class="catLink">Ragdoll</div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="cart" href="shoppingCart.html">Cat Cart <i
+                                class="fas fa-shopping-cart"></i><span>0</span></a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <div>
+        <h3>Use code CATSBEST for R20 off your order</h3>
+    </div
+    <div id="catSelection"></div>
+    <div class="catalogueItems">
+
+        <div class="row row-cols-2">
+
+            <div class="col1">
+                <img src="images/bengal-cat.jpg" alt="bengal" id="bengal1"> R40
+
+                <button class="catButton" href="#">Add To Cart</button>
+                <button class="catButton1"> <a href="product1.html" class="catButton1">View Cat</a></button>
+            </div>
+
+
+            <div class="col2">
+                 <img src="images/Maincoon.png" alt="maincoon" id="maincoon1">R30 
+
+                 <button class="catButton" href="#">Add To Cart</button> <!--add to cart button-->
+                 <button class="catButton1"><a href="product2.html" class="catButton1">View Cat</a>
+</button>
+            </div>
+
+
+            <div class="col3">
+             <img src="images/persian.jpg" alt="persian" id="persian1">R20 
+
+             <button class="catButton" href="#">Add To Cart</button> <!--add to cart button-->
+
+             <button class="catButton1">
+                 <a href="product3.html" class="catButton1">View Cat</a>
+                </button>
+            </div>
+
+
+            <div class="col4"> 
+                <img src="images/ragdoll.jpg" alt="ragdoll" id="ragdoll1">R50 
+
+                <button class="catButton" href="#">Add To Cart</button><!--add to cart button-->
+
+                <button class="catButton1">
+                    <a href="product4.html" class="catButton1">View Cat</a>
+                </button>
+            </div>
+
+
+        </div>
+    </div>
+
+<br>
+<br>
+>
+    <footer>
+        <a id=linkedIN href="https://www.linkedin.com/in/sulaiman-kajee-5ba460187/">LaimyDev <i
+                class="fab fa-linkedin"></i></a>
+    </footer>
+
+    <script src="script.js" async defer></script>
+</body>
+
+</html>
